@@ -11,11 +11,21 @@ Funciona **sem conta** e **sem internet**: os seus dados ficam no seu computador
 
 ### [⬇️ Baixar a versão mais recente](https://github.com/oliveiracarlosadv/Lex-Calendario/releases/latest)
 
+### [📱 Usar no celular ou no navegador](https://oliveiracarlosadv.github.io/Lex-Calendario/)
+
 </div>
 
 ---
 
-## Como instalar
+## Usar no celular (versão web)
+
+Abra **[oliveiracarlosadv.github.io/Lex-Calendario](https://oliveiracarlosadv.github.io/Lex-Calendario/)** no navegador. Para deixar o Lex na tela inicial, abra o menu do app e toque em **Instalar**.
+
+- Funciona sem conta e, depois da primeira abertura, sem internet.
+- Os dados ficam guardados só naquele aparelho. Para levar seus dados do computador, use **Configurações → Backup**.
+- Google Agenda, intimações, busca de processos, envio de e-mail e IA ficam no app de computador.
+
+## Como instalar no computador
 
 Abra a página [**Baixar a versão mais recente**](https://github.com/oliveiracarlosadv/Lex-Calendario/releases/latest) e escolha o instalador do seu computador:
 
