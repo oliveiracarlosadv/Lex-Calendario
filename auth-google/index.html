@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lex Calendário</title>
+<body style="font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#141415;color:#ddd">
+<p>Voltando para o Lex Calendário…</p>
+<script>
+  // Retorno do login do Google: guarda o acesso neste aparelho e volta para o app
+  (function () {
+    var q = new URLSearchParams(location.hash.slice(1) || location.search.slice(1));
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem("lex-google-state") || "{}"); } catch (e) {}
+    localStorage.removeItem("lex-google-state");
+    var base = location.pathname.replace(/\/auth-google\/?$/, "");
+    var back = saved.back && saved.back.indexOf(base + "/") === 0 ? saved.back : base + "/calendario/";
+    if (q.get("state") && q.get("state") === saved.state && q.get("access_token")) {
+      localStorage.setItem("lex-google-token", JSON.stringify({ token: q.get("access_token"), exp: Date.now() + Number(q.get("expires_in") || 3600) * 1000, fresh: true }));
+      localStorage.removeItem("lex-google-erro");
+    } else {
+      localStorage.setItem("lex-google-erro", q.get("error") || "erro");
+    }
+    history.replaceState(null, "", location.pathname);
+    location.replace(back);
+  })();
+</script>
+</body>
+</html>

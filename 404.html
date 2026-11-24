@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<title>Lex Calendário</title>
+<script>
+  // Endereços antigos de compromisso, cliente ou processo: abre a página certa do site
+  (function () {
+    var base = "/Lex-Calendario";
+    var m = location.pathname.slice(base.length).match(/^\/(eventos|clientes|processos)\/([^/]+)\/?$/);
+    location.replace(base + (m ? "/" + m[1] + "/ver/?id=" + encodeURIComponent(m[2]) : "/calendario/"));
+  })();
+</script>
+</html>
