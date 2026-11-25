@@ -71,3 +71,9 @@ O Lex Calendário é gratuito para qualquer pessoa usar. O código-fonte não é
 [Política de Privacidade](PRIVACIDADE.md) · [Termos de Uso](TERMOS.md)
 
 © 2026 Carlos A. A. Oliveira
+
+## Licença
+
+Código licenciado sob a [GNU General Public License v3.0](LICENSE) — © 2026 Carlos Alexandre Albuquerque Oliveira. Você pode usar, estudar, modificar e distribuir; versões modificadas que forem distribuídas devem permanecer sob a GPL-3.0, com o código-fonte disponível.
+
+O nome, a marca e o logotipo do projeto **não** estão incluídos na licença e não podem ser usados para sugerir endosso ou vínculo sem autorização.
